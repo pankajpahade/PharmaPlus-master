@@ -3,15 +3,16 @@ package com.pk.pharma.service;
 import java.util.Optional;
 
 import com.pk.pharma.entity.Medicine;
+import com.pk.pharma.response.Response;
 
 public interface MedicineService {
 
-	Medicine createMedicine(Medicine medicine);
+	Response createMedicine(Medicine medicine);
 
-	Medicine findMedicineByName(String medicineName);
+	//Medicine findMedicineByName(String medicineName);
 
 	Optional<Medicine> findMedicineById(Long id);
 
-	Medicine updateMedicine(Medicine medicine);
+	Response updateMedicine(Medicine medicine, Long id);
 
 }

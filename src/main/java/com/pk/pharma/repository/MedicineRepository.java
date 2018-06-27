@@ -10,4 +10,6 @@ public interface MedicineRepository extends JpaRepository<Medicine, Long>{
 
 	Medicine findByMedicineName(String medicineName);
 
+	//Medicine findByMedicineName(String medicineName);
+
 }
